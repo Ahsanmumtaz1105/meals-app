@@ -21,8 +21,8 @@ class Meal {
   final List<String> ingredients;
   final List<String> steps;
   final int duration;
-  final Enum complexity;
-  final Enum affordability;
+  final Complexity complexity;
+  final Affordability affordability;
   final bool isGlutenFree;
   final bool isLactoseFree;
   final bool isVegan;
