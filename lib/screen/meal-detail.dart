@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/dummy_data.dart';
-import '../models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
   static const RouteName = '/meal-detail';
@@ -45,7 +44,7 @@ class MealDetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Image.network(
@@ -89,6 +88,12 @@ class MealDetailScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.delete),
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
       ),
     );
   }
