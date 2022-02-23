@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../models/meal.dart';
-import '../screens/meal-detail.dart';
+import '../screen/meal-detail.dart';
 
 class MealItems extends StatelessWidget {
   final String id;
